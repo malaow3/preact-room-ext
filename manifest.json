@@ -1,0 +1,27 @@
+{
+  "name": "Preact Room",
+  "description": "",
+  "version": "0.3",
+  "manifest_version": 3,
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://play.pokemonshowdown.com/*"
+      ],
+      "js": [
+        "dist/main.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "dist/room.js"
+      ],
+      "matches": [
+        "https://play.pokemonshowdown.com/*"
+      ]
+    }
+  ]
+}

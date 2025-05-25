@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/main.js"],
+  "sourcesContent": ["let s;\n\ns = document.createElement(\"script\");\ns.src = chrome.runtime.getURL(\"dist/room.js\");\ns.onload = () => s.remove();\n(document.head || document.documentElement).append(s);\n"],
+  "mappings": ";;AAAA,MAAI;AAEJ,MAAI,SAAS,cAAc,QAAQ;AACnC,IAAE,MAAM,OAAO,QAAQ,OAAO,cAAc;AAC5C,IAAE,SAAS,MAAM,EAAE,OAAO;AAC1B,GAAC,SAAS,QAAQ,SAAS,iBAAiB,OAAO,CAAC;",
+  "names": []
+}
