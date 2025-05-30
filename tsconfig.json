@@ -1,30 +1,28 @@
 {
-  "compilerOptions": {
-    "target": "es2021", // Or a later version like "es2022" or "esnext"
-    "module": "esnext",
-    "moduleResolution": "node",
-    "jsx": "react-jsx", // Use react-jsx for automatic JSX runtime
-    "jsxImportSource": "preact", // Tell TypeScript to use Preact for JSX
-    "strict": true, // Enable a set of strict type-checking options
-    "esModuleInterop": true, // Allow default imports from modules with no default export
-    "skipLibCheck": true, // Skip type checking of declaration files
-    "forceConsistentCasingInFileNames": true, // Disallow inconsistent casing in file names
-    "lib": ["dom", "dom.iterable", "esnext"], // Include DOM and ESNext library types
-    "allowJs": true, // Allow JavaScript files to be compiled
-    "checkJs": false, // Don't type-check JavaScript files (optional)
-    "noEmit": true, // Don't emit output files (TypeScript is used for type checking only)
-    "resolveJsonModule": true, // Allow importing .json files
-    "isolatedModules": true // Ensure that each file can be safely transpiled without relying on other files
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.js",
-    "src/**/*.jsx",
-    "src/types/**/*.d.ts", // Include a directory for your custom declaration files
-    "types/**/*.d.ts" // Include a directory for your custom declaration files
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+	"compilerOptions": {
+		"target": "es2021", // Or a later version like "es2022" or "esnext"
+		"module": "esnext",
+		"moduleResolution": "node",
+		"jsx": "react-jsx", // Use react-jsx for automatic JSX runtime
+		"jsxImportSource": "preact", // Tell TypeScript to use Preact for JSX
+		"strict": true, // Enable a set of strict type-checking options
+		"esModuleInterop": true, // Allow default imports from modules with no default export
+		"skipLibCheck": true, // Skip type checking of declaration files
+		"forceConsistentCasingInFileNames": true, // Disallow inconsistent casing in file names
+		"lib": ["dom", "dom.iterable", "esnext"], // Include DOM and ESNext library types
+		"allowJs": true, // Allow JavaScript files to be compiled
+		"checkJs": false, // Don't type-check JavaScript files (optional)
+		"noEmit": true, // Don't emit output files (TypeScript is used for type checking only)
+		"resolveJsonModule": true, // Allow importing .json files
+		"isolatedModules": true // Ensure that each file can be safely transpiled without relying on other files
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/**/*.js",
+		"src/**/*.jsx",
+		"src/types/**/*.d.ts", // Include a directory for your custom declaration files
+		"types/**/*.d.ts" // Include a directory for your custom declaration files
+	],
+	"exclude": ["node_modules"]
 }

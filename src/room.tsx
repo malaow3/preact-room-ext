@@ -1,5 +1,6 @@
 // Reference : https://github.com/smogon/pokemon-showdown-client/blob/3b81b9958e12d49397d8aa69ecc6291c33fb2d2c/play.pokemonshowdown.com/src/panel-example.js
 import { h, Component } from "preact";
+import "./test.css";
 
 interface ViewHellodexPanelProps {
   room: PSRoom;
@@ -18,7 +19,7 @@ class ViewHellodex extends Component<ViewHellodexPanelProps> {
 
   render() {
     return (
-      <div className="">
+      <div className="room-title">
         <h1>HelloDex</h1>
       </div>
     );

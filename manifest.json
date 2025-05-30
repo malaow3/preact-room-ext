@@ -10,14 +10,17 @@
         "https://play.pokemonshowdown.com/*"
       ],
       "js": [
-        "dist/main.js"
+        "main.js"
+      ],
+      "css": [
+        "room.css"
       ]
     }
   ],
   "web_accessible_resources": [
     {
       "resources": [
-        "dist/room.js"
+        "room.js"
       ],
       "matches": [
         "https://play.pokemonshowdown.com/*"
