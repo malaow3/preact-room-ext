@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .room-title {
 	color: #bae420 !important;
 }

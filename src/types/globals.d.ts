@@ -9,6 +9,8 @@ interface PS {
 
 interface Window {
   PS: PS;
+  renderHellodexApp?: (mountPoint: HTMLElement) => void;
+  HELLODEX_CSS?: string;
 }
 
 // Stub for PSRoom - Declared globally

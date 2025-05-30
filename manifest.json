@@ -11,9 +11,6 @@
       ],
       "js": [
         "main.js"
-      ],
-      "css": [
-        "room.css"
       ]
     }
   ],

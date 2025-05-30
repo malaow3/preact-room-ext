@@ -49,12 +49,21 @@ export default defineConfig({
         "react-dom/server": "preact/compat",
       };
 
-      // config.module = config.module || {};
-      // config.module.rules = config.module.rules || [];
-      // config.module.rules.push({
-      //   test: /\.css$/,
-      //   use: [{ loader: "style-loader" }, { loader: "css-loader" }],
-      // });
+      config.module = config.module || {};
+      config.module.rules = config.module.rules || [];
+      config.module.rules.unshift({
+        test: /\.inline\.txt$/,
+        type: "asset/source",
+      });
+      config.module.rules.unshift({
+        test: /\.inline\.css$/,
+        type: "asset/source",
+      });
+      config.module.rules.push({
+        test: /\.css$/,
+        exclude: /\.inline\.css$/,
+        use: [{ loader: "style-loader" }, { loader: "css-loader" }],
+      });
     },
   },
   performance: {
